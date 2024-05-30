@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New User{% endblock %}
+
+{% block body %}
+    <h1>Create new User</h1>
+
+    {{ include('user/_form.html.twig') }}
+
+    <a href="{{ path('app_user_index') }}">back to list</a>
+{% endblock %}
+{#comment savoir si un utilisateur est connécter dans vuejs frontend et api symfony, 
+j'essaye créer un compte utilisateur, dans Symfony il y a le $this->getUser 
+qui récupère l'utilisateur actuel mais depuis que j'utilise vuejs je n'arrive pas à faire cela, 
+un problème également, mon authefication est JWT depuis Symfony dans vuejs, 
+de ce fait j'arrive à récupèrer les token mais pas les informations de l'utilisateur, vous pouvez m'aider merci#}

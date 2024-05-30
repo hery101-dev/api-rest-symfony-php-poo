@@ -1,0 +1,5 @@
+gesdinet_jwt_refresh_token:
+  user_identity_field: id
+  ttl: 2592000
+  ttl_update: true
+  refresh_token_class: App\Entity\RefreshToken

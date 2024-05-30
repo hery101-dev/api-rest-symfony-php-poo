@@ -1,0 +1,24 @@
+# fos_elastica:
+#     indexes:
+#         jobOffer:
+#             persistence:
+#                 driver: orm
+#                 model: App\Entity\JobOffer
+#                 provider: ~
+#                 finder: ~
+#             properties:
+#                 title: ~
+#                 description: ~
+#                 deadlineAt:
+#                     type: date
+#                 jobStatus: ~
+#                 createdAt:
+#                     type: date
+#                 location:
+#                     type: object
+#                     properties:
+#                         id: ~
+#                 company:
+#                     type: object
+#                     properties:
+#                         id: ~

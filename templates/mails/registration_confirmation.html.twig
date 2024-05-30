@@ -1,0 +1,14 @@
+<h1>Confirmation de votre compte utilisateur</h1>
+<p>
+Bonjour, {{ user.username}} et bienvenue sur notre site.
+
+Veuillez confirmer votre compte maintenant en cliquant sur le lien ci-dessous.<br><br>
+
+Veuillez noter que ce lien est valable jusqu'au <strong>{{ lifeTimeToken }} </strong>. Après cette date, il ne sera plus valide.<br><br>
+
+<a href="http://localhost:5173/check-email-verification/{{token}}/{{user.id}}">Vérifier mon compte.</a><br><br>
+
+Ceci est un email automatique, merci de ne pas répondre.
+
+A bientôt sur notre site
+</p>
